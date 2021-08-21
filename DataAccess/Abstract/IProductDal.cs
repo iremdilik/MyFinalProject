@@ -7,14 +7,8 @@ namespace DataAccess.Abstract
 {
     //IProductDal -- I->interface Product Dal->data access layor
     //interface'in metodları default publictir.
-    public interface IProductDal
+    public interface IProductDal : IEntityRepository<Product>
     {
-        List<Product> GetAll();
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(Product product);
-
-        List<Product> GetAllByCategory(int categoryId); //ürünleri kategoriue göre filtrele
 
     }
 }
