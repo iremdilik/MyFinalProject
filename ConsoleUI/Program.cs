@@ -21,7 +21,7 @@ namespace ConsoleUI
                 Console.WriteLine(category.CategoryName);
             }
         }
-        .
+        
         private static void ProductTest()
         {
             ProductManager productManager = new ProductManager(new EfProductDal(),
